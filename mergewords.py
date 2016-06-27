@@ -6,12 +6,12 @@ class MainPage(webapp2.RequestHandler):
 
     def get(self):
         self.response.headers["Content-Type"] = "text/html"
-        self.response.write("""
+        self.response.out.write("""
         	<html>
         	<head><title>Word Machine</title></head>
         	<body>
         	 <h1>Word Machine</h1>
-	          <form action="" method="post" action="/magic">
+	          <form method="post" action="/magic">
 	        	<input type="text" name="first"><br>
 	        	<input type="text" name="second"><br>
 	        	<p><input type="submit" value="Magic!"></p>
