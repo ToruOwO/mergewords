@@ -27,9 +27,9 @@ class Merge(webapp2.RequestHandler):
 		c = ''
 		i = 0
 		while i < max(len(a),len(b)):
-			if not a[i]:
+			if i >= len(a):
 				c = c + b[i]
-			elif not b[i]:
+			elif i >= len(b):
 				c = c + a[i]
 			else:
 				c = c + a[i] + b[i]
