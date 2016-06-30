@@ -11,6 +11,7 @@ class MainPage(webapp2.RequestHandler):
         	<head><title>Word Machine</title></head>
         	<body>
         	 <h1>Word Machine</h1>
+        	 <img src="http://www.rkanepublications.com/blog/wp-content/uploads/2014/09/Meme-guy-staring-at-computer-screen-thinking.jpg" alt="Hmm" style="width:327px;height:243px;">
 	          <form method="post" action="/magic">
 	        	<input type="text" name="first"><br>
 	        	<input type="text" name="second"><br>
