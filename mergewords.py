@@ -34,7 +34,8 @@ class Merge(webapp2.RequestHandler):
 				c = c + a[i] + b[i]
 			i+=1
 		res = """<html><body>
-				{}
+				<h2>{}</h2>
+				<img src="http://s.quickmeme.com/img/1e/1e316e8b30384c27aa347055973c419a658e6673e630d193304482261ef5de28.jpg" alt="Magic" style="width:304px;height:228px;">
 				</body></html>""".format(c)
 		self.response.headers["Content-Type"] = "text/html"
 		self.response.out.write(res)
